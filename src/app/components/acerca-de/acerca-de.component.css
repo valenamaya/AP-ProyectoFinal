@@ -7,18 +7,13 @@ div{
     text-align: center;
 }
 
-#nombre{
-    font-weight: bold;
-    margin-top: 30%;
-}
-
 @media (min-width: 576px){
     #fotodeperfil{
         position: absolute;
         width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        right: 63%;
+        left: 3%;
         top: 600px;
     }
 }
@@ -29,7 +24,12 @@ div{
         width: 30%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 33%;
-        top: 700px;
+        left: 3%;
+        top: 600px;
     }
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
 }
