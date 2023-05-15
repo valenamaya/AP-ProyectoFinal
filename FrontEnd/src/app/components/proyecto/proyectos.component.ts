@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-proyectos',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent {
+  constructor() { }
 
+  ngOnInit(): void {
+  }
 }
