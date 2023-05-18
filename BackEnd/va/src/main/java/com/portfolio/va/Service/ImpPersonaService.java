@@ -2,7 +2,7 @@ package com.portfolio.va.Service;
 
 import com.portfolio.va.Entity.Persona;
 import com.portfolio.va.Interface.IPersonaService;
-import com.portfolio.va.Repositoy.IPersonaRepository;
+import com.portfolio.va.Repository.IPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

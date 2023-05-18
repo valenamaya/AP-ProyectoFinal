@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.portfolio.mgb.Security.Entity;
+package com.portfolio.va.Security.Entity;
 
-import com.portfolio.va.Security.Entity.Usuario;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,10 +7,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- *
- * @author Usuario
- */
 public class UsuarioPrincipal implements UserDetails {
 
     private String nombre;
@@ -39,7 +29,7 @@ public class UsuarioPrincipal implements UserDetails {
                 .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors
                 .toList());
         return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(),
-                 usuario.getPassword(), authorities);
+                usuario.getPassword(), authorities);
     }
 
     @Override
